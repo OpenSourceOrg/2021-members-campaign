@@ -435,6 +435,10 @@ hr {
 
 @media all and (min-width: 600px) {
     .split {
+        grid-template-columns: 60% 40%;
+        grid-column-gap: 1rem;
+    }
+    .split2 {
         grid-template-columns: 40% 60%;
     }
 }

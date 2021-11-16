@@ -35,7 +35,7 @@ const makeAPIcalls = async () => {
     window.plausible('Free membership');
 
     // redirect to thank you
-    window.location.href += `thank-you.html?name=${nameInput.value}`
+    window.location.href = `https://join.opensource.org/thank-you.html?name=${nameInput.value}`
 }
 
 const handleSubmit = (event) => {

@@ -32,6 +32,8 @@ const makeAPIcalls = async () => {
 
     if (response.status !== 'success') return;
 
+    window.plausible('Free membership');
+
     // redirect to thank you
     window.location.href += `thank-you.html?name=${nameInput.value}`
 }

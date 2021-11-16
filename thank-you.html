@@ -18,7 +18,8 @@
     <meta property="twitter:image" content="https://join.opensource.org/static/img/twitter3.gif">
     <meta name="theme-color" content="#1E531D">
 
-    <meta property="og:locale:alternate" content="en_US">
+    <script defer data-domain="join.opensource.org" src="https://plausible.io/js/plausible.outbound-links.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
     <!-- SVG pattern generator from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
@@ -102,6 +103,7 @@
                 document.getElementById("paypal-button-container-P-0X907707YT156372PMGBDALY").style.display = 'none';
                 document.getElementById("cta").style.display = 'none';
                 document.getElementById("paypal-thanks").style.display = 'block';
+                window.plausible('Full Membership');
             }
         }).render('#paypal-button-container-P-0X907707YT156372PMGBDALY'); // Renders the PayPal button
         </script>
@@ -118,7 +120,7 @@
 
                 <p>This unique badge is yours forever! OSI members are already sharing them on their social media channels.</p>
 
-                <a href="" class="download-button button" download="osi_membership_badge.svg">Download Badge SVG</a>
+                <a href="" class="download-button button" download="osi_membership_badge.svg" onclick="window.plausible('Badge download')">Download Badge SVG</a>
 
                 <hr />
 

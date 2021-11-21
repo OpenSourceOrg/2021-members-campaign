@@ -14,7 +14,7 @@ const makeAPIcalls = async () => {
             displayError.textContent = result.error.message;
         }
     };
-    
+
     const zapier_data = {
         name: nameInput.value,
         email: emailInput.value,

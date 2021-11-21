@@ -22,7 +22,7 @@
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
     <!-- SVG pattern generator from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+    <script src=""></script>
 
     <style media="all">
         @font-face {
@@ -83,7 +83,8 @@
     <main id="main-content" class="main">
 
         <div class="split">
-            <div><h4>Become a full member of OSI</h4>
+            <div>
+                <h4>Become a full member of OSI</h4>
                 <p id="m_cta" style="font-size:1.5rem;line-height:32px">Only <strong>$40 per year</strong></p>
                 <ul>
                     <li>Get the right to vote to elect the next board of directors</li>
@@ -91,10 +92,10 @@
                 </ul>
             </div>
             <div>
-                <a href="https://opensource.org/civicrm/contribute/transact?reset=1&id=1" class="button" style="margin-top:2rem" target="_blank">Become a full member</a>
+                <a href="https://opensource.org/civicrm/contribute/transact?reset=1&id=1" class="button" style="margin-top:2rem" target="_blank" rel="noopener">Become a full member</a>
             </div>
         </div>
-    
+
         <hr />
 
         <div class="split split2">
@@ -107,28 +108,24 @@
 
                 <p>This unique badge is yours forever! OSI members are already sharing them on their social media channels.</p>
 
-                <a href="" class="download-button button" download="osi_membership_badge.svg" onclick="window.plausible('Badge download')">Download Badge SVG</a>
+                <button id="png">Download Badge</button>
+                <a href="" class="download-button button" download="osi_membership_badge.svg" onclick="window.plausible('Badge download SVG')">Download SVG</a>
 
-                
+                <canvas id="canvas" style='display:none'></canvas>
+
             </div>
         </div>
 
         <hr />
 
-                <h3 style="text-align:center">Tell your friends!</h3>
+        <h3 style="text-align:center">Tell your friends!</h3>
 
-                <script src="https://cdn.jsdelivr.net/npm/shareon@1/dist/noinit/shareon.min.js" type="text/javascript"></script>
-                <link href="https://cdn.jsdelivr.net/npm/shareon@1/dist/shareon.min.css" rel="stylesheet">
-
-                <div class="shareon" data-url="https://join.opensource.org" style="text-align:center">
-                    <a class="facebook" aria-title="Facebook" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
-                    <a class="linkedin" aria-title="Linkedin" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
-                    <a class="mastodon" aria-title="Mastodon" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
-                    <a class="twitter" aria-title="Twitter" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
-                </div>
-                <script type="text/javascript">
-                    document.addEventListener("DOMContentLoaded", function() {shareon()});
-                </script>
+        <div class="shareon" data-url="https://join.opensource.org" style="text-align:center">
+            <a class="facebook" aria-title="Facebook" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
+            <a class="linkedin" aria-title="Linkedin" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
+            <a class="mastodon" aria-title="Mastodon" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
+            <a class="twitter" aria-title="Twitter" data-title="Hey, I just joined @OpenSourceOrg to show my support of open source. You should do it too and get a cool unique badge"></a>
+        </div>
 
         <hr />
 
